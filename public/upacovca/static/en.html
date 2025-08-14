@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brief Static - Nikita Borysenko</title>
+  <!-- Подключаем внешний CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles1.css?v=3.2.1" />
+</head>
+<body>
+  <!-- Верхняя оранжевая часть -->
+  <div class="top-banner">
+    <h1>Brief Static</h1>
+    <p class="credits">© Borysenko Design</p>
+    
+    <div class="lang-dropdown">
+      <button class="lang-btn">🌍</button>
+      <div class="lang-menu">
+        <a href="./ru">Ru</a>
+        <a href="./en">En</a>
+        <a href="./ua">Ua</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules-container">
+    <div class="rules-header">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="none">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M11 7h2v2h-2zm0 4h2v6h-2z" fill="#fff" />
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-3.59 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#fff" />
+        </svg>
+      </div>
+      <h2>Guidelines for filling out the brief:</h2>
+    </div>
+  
+    <div class="rules-list">
+      <div class="rule-item">
+        <div class="rule-number">1</div>
+        <div class="rule-text">
+          <b class="sub-title">Deadlines must be clear and specific</b>
+          No "ASAP", no "yesterday", no "as soon as possible".<br>
+          Correct: 15.02 by 18:00 inclusive.
+        </div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-number">2</div>
+        <div class="rule-text">
+          <b class="sub-title">Photos and videos — in one place only</b>
+          Upload materials to Google Drive or similar services.<br>
+          Only final photos approved by the client.
+        </div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-number">3</div>
+        <div class="rule-text">
+          <b class="sub-title">Texts and offers — clear and to the point</b>
+          No "come up with it yourself", "as you wish" or "up to you".<br>
+          Provide ready and structured information.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 👇 Градиентная линия (вставляем в самый конец блока) -->
+    <svg class="gradient-decor" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 800 800" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff6600"/>
+          <stop offset="100%" stop-color="#ffcc00"/>
+        </linearGradient>
+      </defs>
+    
+      <!-- Верхняя линия (углубили внутрь блока) -->
+      <path d="M710,-300 C100,280 300,270 600,500" stroke="url(#gradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
+    
+      <!-- Нижняя линия (поднята выше) -->
+      <path d="M500,600 C200,260 20,530 -300,650" stroke="url(#gradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  
+
+  <!-- Основной контент (островки) -->
+  <div class="brief-wrapper">
+
+    <div class="brief-section">
+      <h2>Project title (for saving)</h2>
+      <div class="text-area-wrapper">
+        <input type="text" id="projectTitle" placeholder="Enter project title" style="padding: 10px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc; width: 100%;" />
+      </div>
+    </div>
+    <div class="brief-content">
+    
+    <!-- Островок 1 -->
+    <div class="brief-section">
+      <h2>1. Briefly about the project:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Name, type of activity, what price segment of the market do you occupy?"></div>
+      </div>
+    </div>
+
+    <!-- Островок 2 -->
+    <div class="brief-section">
+      <h2>2. Brand identity information:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Brandbook, guidelines, fonts, colors (#******) ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 3 -->
+    <div class="brief-section">
+      <h2>3. Website and social media links:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Link to your Instagram ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 4 -->
+    <div class="brief-section">
+      <h2>4. References:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Explain why you chose these specific examples/references"></div>
+      </div>
+    </div>
+
+    <!-- Островок 5 -->
+    <div class="brief-section">
+      <h2>5. Links to materials (photos/videos):</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Links to Google Drive or other services (If there are no materials, I will use free access sources) ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 6 -->
+    <div class="brief-section">
+      <h2>6. Required quantity and sizes:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="5 pieces, 1920×1080"></div>
+      </div>
+    </div>
+
+    <!-- Островок 7 -->
+    <div class="brief-section">
+      <h2>7. Texts/ideas for creatives:
+               <span class="tooltip-trigger" tabindex="0">
+          <!-- НАЧАЛО: Вставляем SVG-иконку -->
+          <svg class="tooltip-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+            <path d="M 13 1.1875 C 6.476563 1.1875 1.1875 6.476563 1.1875 13 C 1.1875 19.523438 6.476563 24.8125 13 24.8125 C 19.523438 24.8125 24.8125 19.523438 24.8125 13 C 24.8125 6.476563 19.523438 1.1875 13 1.1875 Z M 15.460938 19.496094 C 14.851563 19.734375 14.367188 19.917969 14.003906 20.042969 C 13.640625 20.167969 13.222656 20.230469 12.742188 20.230469 C 12.007813 20.230469 11.433594 20.050781 11.023438 19.691406 C 10.617188 19.335938 10.414063 18.878906 10.414063 18.324219 C 10.414063 18.109375 10.429688 17.890625 10.460938 17.667969 C 10.488281 17.441406 10.539063 17.191406 10.605469 16.90625 L 11.367188 14.21875 C 11.433594 13.960938 11.492188 13.71875 11.539063 13.488281 C 11.585938 13.257813 11.605469 13.046875 11.605469 12.855469 C 11.605469 12.515625 11.535156 12.273438 11.394531 12.140625 C 11.25 12.003906 10.980469 11.9375 10.582031 11.9375 C 10.386719 11.9375 10.183594 11.96875 9.976563 12.027344 C 9.769531 12.089844 9.59375 12.148438 9.445313 12.203125 L 9.648438 11.375 C 10.144531 11.171875 10.621094 11 11.078125 10.855469 C 11.53125 10.710938 11.964844 10.636719 12.367188 10.636719 C 13.097656 10.636719 13.664063 10.816406 14.058594 11.167969 C 14.453125 11.519531 14.652344 11.980469 14.652344 12.542969 C 14.652344 12.660156 14.640625 12.867188 14.613281 13.160156 C 14.585938 13.453125 14.535156 13.722656 14.460938 13.972656 L 13.703125 16.652344 C 13.640625 16.867188 13.585938 17.113281 13.535156 17.386719 C 13.488281 17.660156 13.464844 17.871094 13.464844 18.011719 C 13.464844 18.367188 13.542969 18.613281 13.703125 18.742188 C 13.859375 18.871094 14.136719 18.933594 14.53125 18.933594 C 14.714844 18.933594 14.921875 18.902344 15.15625 18.839844 C 15.386719 18.773438 15.554688 18.71875 15.660156 18.667969 Z M 15.324219 8.617188 C 14.972656 8.945313 14.546875 9.109375 14.050781 9.109375 C 13.554688 9.109375 13.125 8.945313 12.769531 8.617188 C 12.414063 8.289063 12.238281 7.890625 12.238281 7.425781 C 12.238281 6.960938 12.417969 6.558594 12.769531 6.226563 C 13.125 5.894531 13.554688 5.730469 14.050781 5.730469 C 14.546875 5.730469 14.972656 5.894531 15.324219 6.226563 C 15.679688 6.558594 15.855469 6.960938 15.855469 7.425781 C 15.855469 7.890625 15.679688 8.289063 15.324219 8.617188 Z"></path>
+          </svg>
+          <!-- КОНЕЦ: Вставляем SVG-иконку -->
+          <div class="tooltip-content">
+            <img src="../enscelet.png" alt="Пример структуры текста для креатива">
+          </div>
+        </span>
+      </h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Unique selling proposition (headline), subheading (main info), call to action (CTA) ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 8 -->
+    <div class="brief-section">
+      <h2>8. Project goals:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Raise brand awareness, promote a new product, make sales or drive subscriptions/website visits?"></div>
+      </div>
+    </div>
+
+    <!-- Островок 9 -->
+    <div class="brief-section">
+      <h2>9. Target audience:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Who usually uses it (gender, age, income), what pain point does the product solve?"></div>
+      </div>
+    </div>
+
+    <!-- Островок 10 -->
+    <div class="brief-section">
+      <h2>10. Your preferences:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Ideas, recommendations, notes — everything important for successful execution"></div>
+      </div>
+    </div>
+
+    <!-- Островок 11 -->
+    <div class="brief-section">
+      <h2>11. Desired deadline and why:</h2>
+      <div class="text-area-wrapper">
+        <div class="text-tools">
+          <button class="bold-btn"><b>B</b></button>
+          <button class="italic-btn"><i>i</i></button>
+          <button class="underline-btn"><span>T</span></button>
+        </div>
+        <div class="editable" contenteditable="true"
+             data-placeholder="Why is it important to meet this deadline, even if implementation may take longer?"></div>
+      </div>
+    </div>
+
+    <!-- Кнопка «Скачать бриф» -->
+    <div class="download-section">
+      <!--<button class="download-btn" onclick="downloadBrief()">Скачать бриф</button>-->
+      <button id="downloadButton" class="btn-loading" onclick="downloadBrief()">Download Brief</button>
+    </div>
+
+    <!-- Блок для ссылки -->
+    <div id="result" style="display: none;">
+      <p>Your brief link:</p>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <span id="linkOutput" style="word-break: break-all;"></span>
+        <button class="copybtn" onclick="copyLinkManually()">Copy</button>
+      </div>
+    </div>
+    
+
+    <div class="saved-briefs">
+      <h3>My saved briefs</h3>
+      <ul id="savedBriefList"></ul>
+    </div>
+
+    </div>
+    
+
+    <!-- Toast -->
+    <div id="toast" style="display: none;">
+      Link copied to clipboard!
+    </div>
+
+  </div><!-- /brief-wrapper -->
+<!--
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 200vh; overflow: hidden; z-index: -1;">
+    <img class="background-deco deco-right-top" src="fotofull1.png" alt="">
+    <img class="background-deco deco-left-mid" src="fotofull1.png" alt="">
+    <img class="background-deco deco-right-bottom" src="fotofull1.png" alt="">
+    <img class="background-deco deco-left-bottom" src="fotofull1.png" alt="">
+  </div>
+-->
+  <!-- Подключаем ваш JS -->
+  <script src="../sctipt1.js?v=3.2.1"></script>
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalImage">
+  </div>  
+
+
+  <hr class="footer-top-divider">
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column footer-links-column">
+            <ul class="footer-links-list">
+                <li class="faded"><a href="/static/en" style="color: #818181;">Brief static</a></li>
+                <li><a href="/prezent/en">Brief presentations</a></li>
+                <li><a href="/print/en">Brief printing</a></li> <!-- Translated -->
+                <li><a href="/video/en">Brief video</a></li> <!-- Translated -->
+                <li><a href="/logo/en">Brief logos</a></li> <!-- Translated -->
+                <li><a href="/upacovca/en">Brief packaging</a></li>
+                 <!-- Corrected -->
+            </ul>
+        </div>
+
+        <hr class="footer-mobile-divider">
+
+       <!-- <div class="footer-column footer-socials-column">
+            <div class="social-cards-grid">
+                <a href="https://www.instagram.com/nik.borysenko/" class="social-card image-card">
+                    <img src="../instagram-button.png" alt="Follow us on Instagram">
+                </a>
+                <a href="Https://t.me/nikkdes" class="social-card image-card">
+                    <img src="../telegram-button.png" alt="Make your order via Telegram">
+                </a>
+                <a href="https://www.behance.net/nikone2" class="social-card image-card">
+                    <img src="../behance-button.png" alt="Discover our latest projects">
+                </a>
+                <a href="https://www.instagram.com/vlad.khoro/" target="_blank" rel="noopener noreferrer" class="social-card created-by-card" style="color: black;">
+                    Created by
+                    <div class="animated-name-container">
+                        <span class="name name-one">Magic Bots</span>
+                        <span class="name name-two">Vlad Khoro</span>
+                    </div>
+                </a>
+            </div>
+        </div>-->
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бриф Статика - Нікіта Борисенко</title>
+  <!-- Подключаем внешний CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles1.css?v=3.2.1" />
+</head>
+<body>
+  <!-- Верхняя оранжевая часть -->
+  <div class="top-banner">
+    <h1>Бриф Полиграфия</h1>
+    <p class="credits">© Borysenko Design</p>
+    
+    <div class="lang-dropdown">
+      <button class="lang-btn">🌍</button>
+      <div class="lang-menu">
+        <a href="./ru">Ru</a>
+        <a href="./en">En</a>
+        <a href="./ua">Ua</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="rules-container">
+    <div class="rules-header">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="none">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M11 7h2v2h-2zm0 4h2v6h-2z" fill="#fff" />
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-3.59 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#fff" />
+        </svg>
+      </div>
+      <h2>Правила заполнения ТЗ:</h2>
+    </div>
+  
+    <div class="rules-list">
+      <div class="rule-item">
+        <div class="rule-number">1</div>
+        <div class="rule-text">
+          <b class="sub-title">Сроки должны быть чёткими и конкретными</b>
+          Не "АСАП", не "на вчера", не "в ближайшее время".<br>
+          Правильно: 15.02 до 18:00 включительно.
+        </div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-number">2</div>
+        <div class="rule-text">
+          <b class="sub-title">Фото и видео — только в одном месте</b>
+          Загружайте материалы на Google Диск или аналогичные сервисы.<br>
+          Только финальные, согласованные с клиентом фото.
+        </div>
+      </div>
+      <div class="rule-item">
+        <div class="rule-number">3</div>
+        <div class="rule-text">
+          <b class="sub-title">Тексты и офферы — чётко и по делу</b>
+          Без "придумайте сами", "как хотите" или "на своё усмотрение".<br>
+          Давайте готовую, структурированную информацию.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 👇 Градиентная линия (вставляем в самый конец блока) -->
+    <svg class="gradient-decor" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 800 800" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ff6600"/>
+          <stop offset="100%" stop-color="#ffcc00"/>
+        </linearGradient>
+      </defs>
+    
+      <!-- Верхняя линия (углубили внутрь блока) -->
+      <path d="M710,-300 C100,280 300,270 600,500" stroke="url(#gradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
+    
+      <!-- Нижняя линия (поднята выше) -->
+      <path d="M500,600 C200,260 20,530 -300,650" stroke="url(#gradient)" stroke-width="20" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  
+
+  <!-- Основной контент (островки) -->
+  <div class="brief-wrapper">
+
+    <div class="brief-section">
+      <h2>Название проекта (для сохранения)</h2>
+      <div class="text-area-wrapper">
+        <input type="text" id="projectTitle" placeholder="Введите название проекта" style="padding: 10px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc; width: 100%;" />
+      </div>
+    </div>
+    <div class="brief-content">
+    
+    <!-- Островок 1 -->
+    <div class="brief-section">
+      <h2>1. Текст на баннеры/визитки/флаеры:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Сторона первая: ... Сторона вторая: ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 2 -->
+    <div class="brief-section">
+      <h2>2. Размеры и ориентация:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Визитка 50х90, с двух сторон дизайн и текст."></div>
+      </div>
+    </div>
+
+    <!-- Островок 3 -->
+    <div class="brief-section">
+      <h2>3. Формат файлов:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder=" jpeg, pdf, tiff ..."></div>
+      </div>
+    </div>
+
+    <!-- Островок 4 -->
+    <div class="brief-section">
+      <h2>4. Брендбук, цвета, шрифты:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Добавьте эту информацию текстом или ссылку на ваш брендбук (например, на Google Диск)"></div>
+      </div>
+    </div>
+
+    <!-- Островок 5 -->
+    <div class="brief-section">
+      <h2>5. Стилистика:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Ссылки на примеры или ваш сайт/Instagram — чтобы понять, в каком стиле делать."></div>
+      </div>
+    </div>
+
+    <!-- Островок 6 -->
+    <div class="brief-section">
+      <h2>6. Пожелания по дизайну:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Напишите, что вам нравится или что точно не хотите видеть в дизайне."></div>
+      </div>
+    </div>
+
+    <!-- Островок 7 -->
+    <div class="brief-section">
+      <h2>7. Цель полиграфии:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="для выставки, презентации, точек продаж, раздаточные материалы и т.д."></div>
+      </div>
+    </div>
+
+    <!-- Островок 8 -->
+    <div class="brief-section">
+      <h2>8. Целевая аудитория:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Кто будет видеть/получать эти материалы? (Возраст, пол, интересы и т.д.)."></div>
+      </div>
+    </div>
+
+    <!-- Островок 9 -->
+    <div class="brief-section">
+      <h2>9. Срок выполнения:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Когда вам нужно получить готовый макет и время."></div>
+      </div>
+    </div>
+
+    <!-- Островок 10 -->
+    <div class="brief-section">
+      <h2>10. Печатный профиль:</h2>
+      <div class="text-area-wrapper">
+      <div class="text-tools">
+        <button class="bold-btn"><b>B</b></button>
+        <button class="italic-btn"><i>i</i></button>
+        <button class="underline-btn"><span>T</span></button>
+      </div>
+      <div class="editable" contenteditable="true"
+         data-placeholder="Если печатаете сами — узнайте в типографии, какой нужен профиль и отступы. Если нет — напишите, и мы сделаем по стандарту."></div>
+      </div>
+    </div>
+
+
+
+    <!-- Кнопка «Скачать бриф» -->
+    <div class="download-section">
+      <!--<button class="download-btn" onclick="downloadBrief()">Скачать бриф</button>-->
+      <button id="downloadButton" class="btn-loading" onclick="downloadBrief()">Скачать бриф</button>
+    </div>
+
+    <!-- Блок для ссылки -->
+    <div id="result" style="display: none;">
+      <p>Ссылка на ваш бриф:</p>
+      <div style="display: flex; gap: 10px; align-items: center;">
+      <span id="linkOutput" style="word-break: break-all;"></span>
+      <button class="copybtn" onclick="copyLinkManually()">Скопировать</button>
+      </div>
+    </div>
+    
+
+    <div class="saved-briefs">
+      <h3>Мои сохранения</h3>
+      <ul id="savedBriefList"></ul>
+    </div>
+    
+
+    <!-- Toast -->
+    <div id="toast" style="display: none;">
+      Ссылка скопирована в буфер обмена!
+    </div>
+
+  </div><!-- /brief-wrapper -->
+<!--
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 200vh; overflow: hidden; z-index: -1;">
+    <img class="background-deco deco-right-top" src="fotofull1.png" alt="">
+    <img class="background-deco deco-left-mid" src="fotofull1.png" alt="">
+    <img class="background-deco deco-right-bottom" src="fotofull1.png" alt="">
+    <img class="background-deco deco-left-bottom" src="fotofull1.png" alt="">
+  </div>
+-->
+  <!-- Подключаем ваш JS -->
+  <script src="../sctipt1.js?v=3.2.1"></script>
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" id="modalImage">
+  </div>  
+
+
+  <hr class="footer-top-divider">
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column footer-links-column">
+            <ul class="footer-links-list">
+                <li class="faded"><a href="/static/ru">Бриф статика</a></li>
+                <li><a href="/prezent/ru">Бриф презентации</a></li>
+                <li><a href="/print/ru" style="color: #818181;">Бриф полиграфия</a></li> <!-- Переведено -->
+                <li><a href="/video/ru">Бриф видео</a></li> <!-- Переведено -->
+                <li><a href="/logo/ru">Бриф логотипы</a></li> <!-- Переведено -->
+                <li><a href="/upacovca/ru">Бриф упаковка</a></li>
+                 <!-- Исправлено -->
+            </ul>
+        </div>
+
+        <hr class="footer-mobile-divider">
+
+       <!-- <div class="footer-column footer-socials-column">
+            <div class="social-cards-grid">
+                <a href="https://www.instagram.com/nik.borysenko/" class="social-card image-card">
+                    <img src="../instagram-button.png" alt="Follow us on Instagram">
+                </a>
+                <a href="Https://t.me/nikkdes" class="social-card image-card">
+                    <img src="../telegram-button.png" alt="Make your order via Telegram">
+                </a>
+                <a href="https://www.behance.net/nikone2" class="social-card image-card">
+                    <img src="../behance-button.png" alt="Discover our latest projects">
+                </a>
+                <a href="https://www.instagram.com/vlad.khoro/" target="_blank" rel="noopener noreferrer" class="social-card created-by-card" style="color: black;">
+                    Created by
+                    <div class="animated-name-container">
+                        <span class="name name-one">Magic Bots</span>
+                        <span class="name name-two">Vlad Khoro</span>
+                    </div>
+                </a>
+            </div>
+        </div>-->
+    </div>
+</footer>
+</body>
+</html>
