@@ -1,5 +1,3 @@
-# brief-to-pdf
-
 <div align="center">
   <h1>Brief-To-PDF — web service for generating PDFs from briefs</h1>
   <p><strong>A user fills out a brief → clicks “Download” → the service collects data from HTML chunks and renders a clean PDF → returns the file and a link.</strong></p>
